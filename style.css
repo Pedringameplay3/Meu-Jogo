@@ -1,0 +1,150 @@
+*{
+margim: 0;
+padding: 0;
+}
+
+#game{
+	width: 600px;
+	height: 200px;
+	border: 1px solid black;
+	background-color: green;
+}
+
+
+#circulo {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    margin: 50px;
+    position: relative;
+    top: -245px;
+    border-radius: 50%;	
+animation: quadrado 10s infinite linear;
+}
+
+@keyframes circulo{
+	0%{left: 300px;}
+	100%{left: 0px;}
+}
+
+#personagem{
+	width: 20px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	top: 150px;
+	left: 7px;
+}
+
+.animar{
+animation: personagem 500ms infinite;
+}
+
+@keyframes personagem{
+	0%{top: 150px;}
+	30%{top: 100px;}
+	70%{top: 100px;}
+	100%{top: 150px;}
+}
+
+#quadrado{
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	position: relative;
+	top: 130px;
+	left: 480px;
+	animation: quadrado 1s infinite linear;
+}
+
+@keyframes quadrado{
+	0%{left: 480px;}
+	100%{left: -40px;}
+}
+
+#quadrado2{
+	width: 20px;
+	height: 20px;
+	background-color: gray;
+	position: relative;
+	top: -250px;
+	left: 480px;
+	animation: quadrado 4s infinite linear;
+}
+
+@keyframes quadrado{
+	0%{left: 480px;}
+	100%{left: -40px;}
+}
+
+.bg-green{
+font-family: arial;
+font-size: 14px;
+text-tranform: uppercase;
+font-weight: 700;
+border: none;
+padding: 10px;
+cursor: pointer;
+background-color: green;
+color:#fff;
+box-shadow: 0 5px 0 #006000;
+}
+
+.bg-green:hover{
+background:#006000;
+color:#fff;
+box-shadow: 0 5px 0 #003f00;
+}
+.bg-green:active{
+position: relative;
+top: 5px;
+box-shadow:none;
+}
+
+.bg-red{
+font-family: arial;
+font-size: 14px;
+text-tranform: uppercase;
+font-weight: 700;
+border: none;
+padding: 10px;
+cursor: pointer;
+background-color: red;
+color:#fff;
+box-shadow: 0 5px 0 #8e0000;
+}
+
+.bg-red:hover{
+background:#8e0000;
+color:#fff;
+box-shadow: 0 5px 0 #790101;
+}
+.bg-red:active{
+position: relative;
+top: 5px;
+box-shadow:none;
+}
+
+.bg-yellow{
+font-family: arial;
+font-size: 14px;
+text-tranform: uppercase;
+font-weight: 700;
+border: none;
+padding: 10px;
+cursor: pointer;
+background-color: #b39200;
+color:#fff;
+box-shadow: 0 5px 0 #8a7000;
+}
+
+.bg-yellow:hover{
+background:#8a7000;
+color:#fff;
+box-shadow: 0 5px 0 #6c5800;
+}
+.bg-yellow:active{
+position: relative;
+top: 5px;
+box-shadow:none;
+}
